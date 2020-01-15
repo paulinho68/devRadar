@@ -40,10 +40,10 @@ module.exports = {
 
     async destroy(request, response) {
 
-        let dev = await Dev.findById({_id});
+        let dev = await Dev.findById(request.params.id);
 
         if(dev){
-            const dev = await Dev.remove()
+            const dev = await Dev.findByIdAndRemove(request.params.id)
 
         }else{
             dev = ({

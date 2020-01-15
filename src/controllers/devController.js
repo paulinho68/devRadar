@@ -46,7 +46,6 @@ module.exports = {
         let dev = await Dev.findById(request.params.id);
         
         if(dev){
-            console.log('testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
             // const apiResponse = await axios.get(`https://api.github.com/users/${github_username}`);
 
             const location = {

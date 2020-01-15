@@ -58,7 +58,7 @@ module.exports = {
                 id : request.body.id,
                 github_username : request.body.github_username,
                 name : request.body.name,
-                avatar_url : request.body.iavatar_url,
+                avatar_url : request.body.avatar_url,
                 bio : request.body.bio,
                 techs: parseStringAsArray(request.body.techs),
                 location: location,
